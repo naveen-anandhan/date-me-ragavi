@@ -1,8 +1,9 @@
-# 💖 Date Me App — Romantic Interactive Proposal
+# 💖 Date Me App — Romantic Interactive Proposal for Ragavi
 
-A web app designed to ask the ultimate question: **"Do you love me?"** 💕
+A permanent web app designed for Saravanan to ask Ragavi: **"Do you love me?"** 💕
 
-Built with React 18, Tailwind CSS, Lucide icons, Canvas-Confetti, and the Web Audio API.
+🌐 **Live 24/7 on GitHub Pages:**  
+👉 **[https://naveen-anandhan.github.io/date-me-ragavi/](https://naveen-anandhan.github.io/date-me-ragavi/)**
 
 ---
 
