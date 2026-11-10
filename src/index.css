@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom romantic glowing animations */
+@keyframes floatParticle {
+  0% {
+    transform: translateY(105vh) translateX(0) scale(0.6) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(var(--drift-x, 20px)) scale(1.1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  pointer-events: none;
+  animation: floatParticle var(--float-duration, 8s) linear infinite;
+  animation-delay: var(--float-delay, 0s);
+  left: var(--float-left, 50%);
+  z-index: 0;
+}
+
+/* Cute jelly bounce on click */
+.jelly-click:active {
+  transform: scale(0.92);
+  transition: transform 0.1s ease;
+}
+
+/* Custom scrollbar for cute look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
